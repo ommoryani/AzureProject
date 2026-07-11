@@ -1,0 +1,15 @@
+{
+	"name": "dfazurefactoryproject",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0989f059-ba91-47c8-86bf-f6b695681a96",
+		"tenantId": "7e3652bb-ee4d-45f0-8037-82d153dbc139"
+	}
+}
