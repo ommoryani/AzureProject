@@ -210,7 +210,7 @@
 									{
 										"type": "Query",
 										"text": {
-											"value": "@concat('SELECT MAX(', pipeline().parameters.cdc, ') FROM ', pipeline().parameters.schema, '.', pipeline().parameters.table)",
+											"value": "SELECT MAX(@{pipeline().parameters.cdc}) as cdc FROM @{pipeline().parameters.schema}.@{pipeline().parameters.table}",
 											"type": "Expression"
 										}
 									}
@@ -219,7 +219,7 @@
 							}
 						},
 						{
-							"name": "updated",
+							"name": "updated_last_cdc",
 							"type": "Copy",
 							"dependsOn": [
 								{
